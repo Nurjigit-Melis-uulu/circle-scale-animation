@@ -41,6 +41,38 @@ section {
   animation: circle-scale2 5s .4s infinite ease;
 }
 
+.anima3 .circle {
+  width: 300px;
+  height: 300px;
+  top: calc(50% - 150px);
+  left: calc(50% - 150px);
+  border: 2px solid white;
+}
+
+.anima3 .circle:nth-child(even) {
+  animation: circle-rotate 1.6s infinite linear;
+}
+
+.anima3 .circle:nth-child(odd) {
+  animation: circle-rotate-2 1.6s infinite linear;
+}
+
+@keyframes circle-rotate {
+  from {}
+
+  to {
+    transform: rotateY(180deg)
+  }
+}
+
+@keyframes circle-rotate-2 {
+  from {}
+
+  to {
+    transform: rotateX(180deg)
+  }
+}
+
 @keyframes circle-scale {
 
   0%,
