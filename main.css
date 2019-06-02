@@ -61,7 +61,7 @@ section {
   from {}
 
   to {
-    transform: rotateY(180deg)
+    transform: rotateY(180deg) rotateX(180deg);
   }
 }
 
@@ -69,7 +69,7 @@ section {
   from {}
 
   to {
-    transform: rotateX(180deg)
+    transform: rotateX(180deg) rotateY(-180deg);
   }
 }
 
